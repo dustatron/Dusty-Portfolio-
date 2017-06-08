@@ -6,33 +6,41 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-    <nav>
+    <div id="navbar">
       <div class="topnav" id="myTopnav">
-        <a href="#home">Home</a>
-        <a href="#news">About</a>
-        <a href="#contact">Examples</a>
-        <a href="#about">Contact</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="#about"><span id="name">Dusty Codes</span></a>
+        <a href="#example-work">Examples</a>
+        <a href="#links">links</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menu()">&#9776;</a>
       </div>
-    </nav>
-    <div class="About">
+    </div>
+
+    <div id="about">
         <h2>About</h2>
         <p>Some basic Information. Maybe a small story that warms the heart.</p>
 
     </div>
 
-    <div class="example-work">
+    <div class="spacer">
+
+    </div>
+
+    <div id="example-work">
         <h2>Example Work</h2>
         <p>Here is a list of things I have worked on.</p>
 
     </div>
 
-    <div class="links">
+    <div class="spacer">
+
+    </div>
+
+    <div id="links">
       <h2>Links</h2>
       <p>Here will be a list of links.</p>
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

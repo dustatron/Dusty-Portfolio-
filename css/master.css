@@ -1,4 +1,12 @@
-body {margin:0;}
+body {
+  padding: 0;
+  margin:0;
+}
+div {
+  margin: 0;
+  padding: 0;
+  border: 0px solid red;
+}
 
 .topnav {
   overflow: hidden;
@@ -16,7 +24,7 @@ body {margin:0;}
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #595859;
   color: black;
 }
 
@@ -42,7 +50,46 @@ body {margin:0;}
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: Left;
   }
 
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+#name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#about {
+  padding:3em 2em 2em 3em;
+  margin: 0;
+  background-color: grey;
+  height:90vh;
+}
+
+#example-work {
+  padding:3em 2em 2em 3em;
+  margin: 0;
+  background-color: yellow;
+  height:80vh;
+}
+
+#links {
+  padding:1em 2em 2em 3em;
+  margin: 0;
+  background-color: orange;
+  height:80vh;
+}
+
+.spacer {
+  margin: 0;
+  background-color: white;
+  height:60vh;
 }
