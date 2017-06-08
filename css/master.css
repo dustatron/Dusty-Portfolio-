@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin:0;
+  font-family: Arimo;
+  background-color: black;
 }
 div {
   margin: 0;
@@ -18,14 +20,14 @@ div {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: .7em 2em;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 .topnav a:hover {
   background-color: #595859;
-  color: black;
+  color: #d4b136;
 }
 
 .topnav .icon {
@@ -71,7 +73,7 @@ div {
   padding:3em 2em 2em 3em;
   margin: 0;
   background-color: grey;
-  height:90vh;
+  height:80vh;
 }
 
 #example-work {
@@ -82,14 +84,20 @@ div {
 }
 
 #links {
-  padding:1em 2em 2em 3em;
+  padding:3em 2em 2em 3em;
   margin: 0;
   background-color: orange;
   height:80vh;
 }
 
 .spacer {
+  background-image: url("https://pursuitofillumination.files.wordpress.com/2012/01/xmas_bokeh.jpg");
+  background-size: 100em;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center;
   margin: 0;
   background-color: white;
   height:60vh;
+
 }
