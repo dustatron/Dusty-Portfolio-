@@ -1,8 +1,13 @@
+html {
+  overflow-x: hidden;a
+}
 body {
   padding: 0;
   margin:0;
   font-family: Arimo;
   background-color: black;
+  /*transform-style: preserve-3d;*/
+  /*perspective: 1px;*/
 }
 div {
   margin: 0;
@@ -71,10 +76,10 @@ div {
 }
 
 #about {
-  padding:3em 2em 2em 3em;
+  padding:2.5em 2em 0em 3em;
   margin: 0;
   background-color: grey;
-  height:80vh;
+  height:50vh;
 }
 
 #spacer-1 {
@@ -85,38 +90,44 @@ div {
 }
 
 #example-work {
-  position: relative;
-  padding:3em 2em 2em 3em;
-
+  position: absolute;
+  padding:2.5em 2em 2em 3em;
+  top: 40em;
   width: 100%;
   background-color: yellow;
-  height:100vh;
+  height:60vh;
     /*z-index: -1px;*/
 }
 
 #links {
   position: absolute;
-  top: 100em;
-  padding:3em 2em 2em 3em;
+  top: 80em;
+  padding:2.5em;
   margin: 0;
-  /*width: 100%;*/
+  width: 100%;
   background-color: orange;
-  height:80vh;
+  height:10vh;
 }
 
 .background {
+  /*width: 100vw;*/
+  height: 200vh;
+  /*border: 1px solid red;*/
   position: absolute;
-  z-index: -1;
-  /*background-image: url("https://pursuitofillumination.files.wordpress.com/2012/01/xmas_bokeh.jpg");
-  background-size: 100hv;
+  top: 0px;
+  z-index: -2;
+  /*transform: translateZ(-1px)scale(4);*/
+  margin: 0;
+  background-color: black;
+
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  margin: 0;
-  background-color: white;*/
-
-
-
 }
 
 
@@ -126,6 +137,19 @@ div {
 
 }
 
-.box-test{
+#box-test {
   position: absolute;
+  margin-top: 25em;
+  top: 35em;
+  left:30em;
+  /*z-index: -1;*/
+  /*transform: translateZ(0.5px)scale(2);*/
+}
+
+.box-front {
+  position: absolute;
+  margin-top: 15em;
+  top: 35em;
+  left:10em;
+  /*z-index: 1;*/
 }

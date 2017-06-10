@@ -12,7 +12,19 @@ $(document).ready(function() {
 
   $(window).scroll(function(){
     let yData = $(this).scrollTop();
-    $(".background").css('top', (yData * 0.5)+'px');
+
+    let floaties = function () {
+      if (yData < 1280) {
+        return yData;
+      } else {
+        return '0px';
+      };
+    };
+
+    $(".background").css('top', ((yData * 0.3)+'px'));
+    $(".box-front").css('top', floaties());
+
+    $("#box-test").css('top', ((floaties() * 0.5)+'px'));
 
   })
 
