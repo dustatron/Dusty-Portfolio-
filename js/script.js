@@ -8,6 +8,17 @@ const menu = function() {
 }
 
 $(document).ready(function() {
+  let bottomImage = $( "#link" );
+
+  $(window).scroll(function(){
+    let yData = $(this).scrollTop();
+    $(".background").css('top', (yData * 0.5)+'px');
+
+  })
+
+
+
+
   $("a").on('click', function(event) {
 
       // Make sure this.hash has a value before overriding default behavior
@@ -26,5 +37,9 @@ $(document).ready(function() {
         });
       } // End if
     });// on click
+
+
+
+
 
 }); //end doc ready
