@@ -140,7 +140,7 @@ div {
 .floater-back {
   position: absolute;
   margin-top: 25em;
-  top: 35em;
+  top: 0em;  
   left:30em;
   /*z-index: -1;*/
   /*transform: translateZ(0.5px)scale(2);*/
