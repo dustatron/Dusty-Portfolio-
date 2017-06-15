@@ -22,9 +22,9 @@ $(document).ready(function() {
     };
 
     $(".background").css('top', ((yData * 0.3)+'px'));
-    $(".box-front").css('top', floaties());
+    $(".floater-front").css('top', floaties()*-1.5);
 
-    $("#box-test").css('top', ((floaties() * 0.5)+'px'));
+    $(".floater-back").css('top', ((floaties()*0.2)+'px'));
 
   })
 

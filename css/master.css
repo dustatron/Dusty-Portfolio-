@@ -66,7 +66,7 @@ div {
   position: fixed ;
   top: 0;
   width: 100%;
-  z-index:1;
+  z-index:3;
 
 }
 
@@ -96,7 +96,7 @@ div {
   width: 100%;
   background-color: yellow;
   height:60vh;
-    /*z-index: -1px;*/
+  z-index: -1px;
 }
 
 #links {
@@ -110,8 +110,8 @@ div {
 }
 
 .background {
-  /*width: 100vw;*/
-  height: 200vh;
+  width: 100vw;
+  height: 250vh;
   /*border: 1px solid red;*/
   position: absolute;
   top: 0px;
@@ -137,7 +137,7 @@ div {
 
 }
 
-#box-test {
+.floater-back {
   position: absolute;
   margin-top: 25em;
   top: 35em;
@@ -146,10 +146,17 @@ div {
   /*transform: translateZ(0.5px)scale(2);*/
 }
 
-.box-front {
+.floater-front {
   position: absolute;
-  margin-top: 15em;
-  top: 35em;
-  left:10em;
-  /*z-index: 1;*/
+  height: 200vh;
+  width: auto;
+  user-select: none;
+  pointer-events: none;
+
+  /*margin-top: 15em;*/
+  top: 0px;
+  /*left:10em;*/
+  transform:scale(2);
+  z-index: 1;
+  opacity: 0.2;
 }
