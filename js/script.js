@@ -14,16 +14,23 @@ $(document).ready(function() {
     let yData = $(this).scrollTop();
 
     let floaties = function () {
-      if (yData < 1280) {
-        return yData;
-      } else {
-        return '0px';
-      };
+      // if (yData < 1280) {
+      //   return yData;
+      // } else {
+      //   return '0px';
+      // };
+      return yData;
     };
 
     $(".background").css('top', ((yData * 0.3)+'px'));
-    $(".floater-front").css('top', floaties()*-1.5);
 
+    $(".sliderOne").css('margin-top', (floaties()*0.4)+'px');
+    $(".sliderTwo").css('margin-top', ((floaties()*0.09)-50)+'px');
+    $(".sliderThree").css('margin-top', ((floaties()*0.09)-110)+'px');
+
+
+
+    $(".floater-front").css('top', (floaties()*-1.5)+'px');
     $(".floater-back").css('top', ((floaties()*0.2)+'px'));
 
   })

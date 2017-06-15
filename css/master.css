@@ -17,7 +17,7 @@ div {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #121212;
 }
 
 .topnav a {
@@ -76,10 +76,15 @@ div {
 }
 
 #about {
-  padding:2.5em 2em 0em 3em;
-  margin: 0;
-  background-color: grey;
-  height:50vh;
+  color: white;
+  padding:2em 2em 0em 5em;
+  /*margin-top: -10em;*/
+
+  border: 1px solid black;
+  background-color: #1d1d1d;
+  height:30vh;
+  opacity: 0.9;
+  border-radius: 0.5em;
 }
 
 #spacer-1 {
@@ -90,29 +95,48 @@ div {
 }
 
 #example-work {
-  position: absolute;
-  padding:2.5em 2em 2em 3em;
-  top: 40em;
-  width: 100%;
-  background-color: yellow;
+  color: white;
+  /*position: absolute;*/
+  padding:2em 2em 0em 5em;
+  margin: 0;
+  /*top: 60vh;*/
+  /*width: 100%;*/
+  border: 1px solid black;
+  background-color: #1d1d1d;
+  border-radius: 0.5em;
   height:60vh;
   z-index: -1px;
+  opacity: 0.9;
 }
 
 #links {
-  position: absolute;
-  top: 80em;
-  padding:2.5em;
-  margin: 0;
-  width: 100%;
-  background-color: orange;
-  height:10vh;
+  color: white;
+  /*position: absolute;*/
+  padding:2em 2em 0em 5em;
+  margin-top: 10em;
+  top: 300vh;
+  /*width: 100%;*/
+  border: 1px solid black;
+  background-color: #1d1d1d;
+  border-radius: 0.5em;
+  height:60vh;
+  z-index: -1px;
+  opacity: 0.9;
+}
+.main {
+  margin: 8em;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .main { margin: 0;}
+  #about{ padding:7em 2em 0em 1em; }
+  #example-work{ padding:7em 2em 0em 1em; }
+  #links{ padding:7em 2em 0em 1em; }
 }
 
 .background {
   width: 100vw;
-  height: 250vh;
-  /*border: 1px solid red;*/
   position: absolute;
   top: 0px;
   z-index: -2;
@@ -139,9 +163,9 @@ div {
 
 .floater-back {
   position: absolute;
-  margin-top: 25em;
-  top: 0em;  
-  left:30em;
+  margin-top: 35em;
+  top: 0em;
+  left:50em;
   /*z-index: -1;*/
   /*transform: translateZ(0.5px)scale(2);*/
 }
