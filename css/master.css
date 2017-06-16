@@ -157,7 +157,7 @@ div {
 }
 
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .main { margin: 0;}
   #about{ padding:7em 2em 0em 1em; }
   #example-work{ padding:7em 2em 0em 1em; }
@@ -166,7 +166,7 @@ div {
 
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -174,7 +174,7 @@ div {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
