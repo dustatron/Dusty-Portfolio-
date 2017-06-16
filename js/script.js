@@ -22,7 +22,7 @@ $(document).ready(function() {
       return yData;
     };
 
-    $(".background").css('top', ((yData * 0.3)+'px'));
+    $(".background").css('margin-top', ((yData * 0.3)+'px'));
 
     $(".sliderOne").css('margin-top', (floaties()*0.4)+'px');
     $(".sliderTwo").css('margin-top', ((floaties()*0.09)-50)+'px');
