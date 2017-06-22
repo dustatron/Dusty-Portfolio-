@@ -106,6 +106,26 @@ div {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1d1d', endColorstr='#FFFFFF',GradientType=0 ); /* ie6-9 */s
 }
 
+#about #about-body {
+  /*border: 1px solid red;*/
+  padding: 0em 5em;
+}
+
+#photo img {
+  height: 200px;
+  width: auto;
+  float: left;
+}
+
+#about .right {
+  display: block;
+  float: left;
+  margin-left: 40px;
+  width: 40em;
+  text-align: left;
+}
+
+
 
 #spacer-1 {
   color: white;
@@ -123,7 +143,32 @@ div {
   border: 1px solid black;
   height:60vh;
   z-index: -1px;
+}
 
+#Projects .project-body {
+  margin: 0 10%;
+
+  display: block;
+
+  /*float: left;*/
+}
+
+#Projects .p-one {
+  display: block;
+  padding: 100px;
+  float: left;
+}
+
+#Projects .p-two {
+  display: block;
+  padding: 100px;
+  float: left;
+}
+
+#Projects .p-three {
+  display: block;
+  padding: 100px;
+  float: left;
 }
 
 #Contact {
