@@ -71,6 +71,7 @@ div {
   margin-right: 5em;
 }
 
+/*-------END NAV------*/
 
 .main {
   margin: 8em;
@@ -84,18 +85,18 @@ div {
 }
 
 .title {
-  font-size: 2em;
-  /*margin-top: 1em;
-  padding-top: 0.5em;*/
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
   text-align: center;
 }
 
 #about {
-
+  padding-top: 0;
   color: white;
   text-align: center;
   border-top: 1px solid black;
-  height:55em;
+  height:40em;
   border-radius: 0.5em;
   background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(29,29,29,0.55) 55%, rgba(29,29,29,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(29,29,29,1)), color-stop(45%, rgba(29,29,29,0.55)), color-stop(100%, rgba(255,255,255,0))); /* safari4+,chrome */
@@ -107,24 +108,55 @@ div {
 }
 
 #about #about-body {
-  /*border: 1px solid red;*/
-  padding: 0em 5em;
+  padding: 0em 3em;
 }
 
 #photo img {
   height: 200px;
   width: auto;
   float: left;
+  padding-top: 1em;
+  padding-right: 0.01em;
 }
 
 #about .right {
   display: block;
   float: left;
-  margin-left: 40px;
-  width: 40em;
+  margin-left: 30px;
+  width: 30em;
   text-align: left;
 }
 
+#my-links {
+  width: 100%;
+  height: auto;
+  float: right;
+  text-align: right;
+}
+
+#my-links a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+  color: #37b1f6;
+}
+
+#my-links a:visited {
+  text-decoration: none;
+  margin: 10px;
+}
+
+#my-links a:hover {
+  text-decoration: none;
+  margin: 10px;
+  color: #e98917;
+  text-decoration: underline;
+}
+
+#my-links a:active{
+  color: red;
+  text-decoration: underline;
+}
 
 
 #spacer-1 {
@@ -134,39 +166,70 @@ div {
   width: 100%;
 }
 
+/*------ PROJECTS -------*/
+
 #Projects {
   color: black;
   background-color: white;
-  width: auto;
-  margin-left:  -200px;
-  margin-right: -200px;
+  margin: 0 auto;
   border: 1px solid black;
   height:60vh;
+  text-align: center;
   z-index: -1px;
 }
 
+<<<<<<< HEAD
 #Projects .project-body {
   margin: 0 10%;
   display: block;
+=======
+#Projects a {
+  text-decoration: none;
+}
 
-  /*float: left;*/
+#Projects a:visited {
+    text-decoration: none;
+}
+
+#Projects a:hover {
+    color: #e98917;
+    text-decoration: underline;
+}
+
+#Projects a:active {
+    text-decoration: underline;
+}
+>>>>>>> 488c5495edd7126c9089bf33036a6f095fc85b3f
+
+#Projects .project-body {
+  margin: 0 10vw;
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  /*background-color: lightyellow;*/
 }
 
 #Projects .p-one {
   display: block;
-  padding: 100px;
+  padding: 0px 50px;
   float: left;
+}
+
+.project-image img {
+  height:170px;
+  width: auto;
 }
 
 #Projects .p-two {
   display: block;
-  padding: 100px;
+  padding: 0px 50px;
   float: left;
 }
 
 #Projects .p-three {
   display: block;
-  padding: 100px;
+  padding: 0px 50px;
   float: left;
 }
 
@@ -237,38 +300,60 @@ div {
   opacity: 0.2;
 }
 
+.show{
+  float: none;
+  display: block;
+  text-align: left;
+
+}
+
 
 @media screen and (max-width: 960px) {
   .main { margin: 0;}
   #about{ padding:7em 2em 0em 1em; }
-  #Projects{ padding:7em 2em 0em 1em; }
+  #Projects{
+    padding:7em 2em 0em 1em;
+    height:auto;
+
+  }
+  #Projects .project-body {
+    flex-direction: column;
+  }
   #Contact{ padding:7em 2em 0em 1em; }
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .topnav .float-right {display: none;}
+  .topnav .icon {
     float: right;
     display: block;
     padding-top: 1.5em;
+    margin-right: 5em;
     transform: scale(2);
   }
 
+  .float-right a{
+    float:none;
+    display: block;
+    border: 0px solid red;
+    text-align: right;
+    margin-right: 20%;
+  }
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
-    float: none;
+  .float-right.responsive{
+    float:none;
     display: block;
-    text-align: Left;
+
 
   }
 
 
 }
 
-
-/*@media screen and (max-width: 960px) {
+/*
+@media screen and (max-width: 960px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
