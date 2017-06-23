@@ -1,118 +1,100 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dusty Portfolio</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  </head>
-  <body>
-    <div id="navbar">
-      <div class="topnav" id="myTopnav">
-        <a href="#one" id="logo"><div id="first-name">Dusty</div> <div id="last-name">Codes</div></a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menu()">&#9776;</a>
-          <div id="menu" class="float-right">
-            <a href="#one">About</a>
-            <a href="#two">Projects</a>
-            <a href="#three">Contact</a>
-          </div>
+<head>
+  <link rel="stylesheet" href="css/master.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<title>Dusty Codes</title>
+</head>
+<body>
+	<i class="fa fa-bars toggle_menu"></i>
+	<div class="menu_button">
+
+	</div>
+
+
+	<div class="sidebar_menu">
+		<i class="fa fa-times"></i>
+			<a href="#"><h1 class="boxed_item">Dusty <span class="bold">McCord</span> </h1></a>
+			<h2 class="logo_title">Front End Web Developer</h2>
+			<ul class="nav">
+				<li class="nav-item"><a href="#about">ABOUT</a></li>
+				<li class="nav-item"><a href="#projects">PROJECTS</a></li>
+				<li class="nav-item"><a href="#contact">Contact</a></li>
+				<li class="nav-item">Skills</li>
+				<li class="nav-item">Interests</li>
+			</ul>
+	</div>
+	<div class="content">
+		<div id="about" class="padding">
+			<h2 class="header">About</h2>
+			<div class="inner_content">
+				<div class="profile_image"><img src="https://dustatron.github.io/Dusty-Portfolio/images/my-face.jpg" alt="" /></div>
+				<div class="copy">
+								<p>Lorem ipsum dolor sit amet, omnes denique splendide mel id, reque velit neglegentur te vis. Et eum simul scribentur, no qui hinc lobortis inimicus. An lorem mollis postulant eos, aperiri discere imperdiet ei nec, et libris populo platonem sea. Pri ne laoreet luptatum. Pro ea mutat illum. Sed quodsi civibus evertitur et, choro essent facete mel ei.
+
+Impedit disputando cu pri, modo fabulas accumsan his an. Quaerendum referrentur has ea, ne has disputationi conclusionemque, cum eu integre alterum. Ad per numquam legendos senserit. Verterem invenire has in. Pri causae assueverit cu.</p>
+				</div>
+
+
+			</div>
+      <div id="my_links">
+            <a href="https://www.linkedin.com/in/dusty-mccord-01451aa/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/dustatron" target="_blank">GitHub</a>
+            <a href="https://codepen.io/Dustatron/" target="_blank">CodePen.io</a>
 
       </div>
-    </div>
-    <div class="main">
+		</div>
 
-      <div id="one" class="padding">
-        invisible padding
-      </div>
+		<div id="projects" class="padding">
+			<h2 class="header">Projects</h2>
+			<div class="columns">
 
-      <div id="about" class="about">
-        <div class="title">
-          <h2 >About</h2>
-        </div>
-          <div id="about-body">
-            <div id="photo" class="left">
-                <img src="images\my-face.jpg" alt="">
-            </div>
-            <div class="right">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            </div>
-            <div id="my-links">
-              <a href="https://www.linkedin.com/in/dusty-mccord-01451aa/" target="_blank">LinkedIn</a>
-              <a href="https://github.com/dustatron" target="_blank">GitHub</a>
-              <a href="https://codepen.io/Dustatron/" target="_blank">CodePen.io</a>
-
-            </div>
-          </div>
-
-      </div>
-      </div>
-
-      <div id="spacer-1">
-        <!-- <div class="floater-back">
-          Ideas
-        </div> -->
-
-        <div class="floater-front">
-          <!-- <img src="images/smudg-front.png" alt=""> -->
-        </div>
-      </div>
-
-      <div id="two" class="padding">
-        invisible padding
-      </div>
-
-      <div id="Projects">
-        <div class="title">
-            <h2>Projects</h2>
-
-        </div>
-          <div class="project-body">
-            <div class="p-one project-image">
-              <a href="https://idealist-ae31b.firebaseapp.com/posts" target="_blank"><h3>Backyard Movie Poll</h3></a>
+				<div class="col-3 project-image">
+					<div id="one">
+            <a href="https://idealist-ae31b.firebaseapp.com/posts" target="_blank"><h3>Backyard Movie Poll</h3></a>
               <a href="https://idealist-ae31b.firebaseapp.com/posts" target="_blank"><img class="p-image" src="images/BYM.png" alt=""></a>
               <p>Some basic info about this project</p>
+					</div>
+				</div>
 
-            </div>
-            <div class="p-two project-image">
-              <a href="https://video-commander.firebaseapp.com/?https://firebasestorage.googleapis.com/v0/b/video-commander.appspot.com/o/Mercurial%20Fast%20Forward_R17_AppleTV_Large.m4v?alt=media&token=54df1a66-e2c1-4e55-a916-faead37d5985" target="_blank"><h3>Video Commenting</h3></a>
+				<div class="col-3 project-image">
+					<div id="2">
+            <a href="https://video-commander.firebaseapp.com/?https://firebasestorage.googleapis.com/v0/b/video-commander.appspot.com/o/Mercurial%20Fast%20Forward_R17_AppleTV_Large.m4v?alt=media&token=54df1a66-e2c1-4e55-a916-faead37d5985" target="_blank"><h3>Video Commenting</h3></a>
               <a href="https://video-commander.firebaseapp.com/?https://firebasestorage.googleapis.com/v0/b/video-commander.appspot.com/o/Mercurial%20Fast%20Forward_R17_AppleTV_Large.m4v?alt=media&token=54df1a66-e2c1-4e55-a916-faead37d5985" target="_blank"><img  class="p-image" src="images/Video-Commandor.png" alt=""></a>
               <p>some basic info about this project</p>
-            </div>
-            <div class="p-three project-image">
-              <a href="https://codepen.io/Dustatron/full/xgGXZj/" target="_blank"><h3>Weather App</h3></a>
+					</div>
+					</div>
+          
+					<div class="col-3 project-image">
+					<div id="3">
+            <a href="https://codepen.io/Dustatron/full/xgGXZj/" target="_blank"><h3>Weather App</h3></a>
               <a href="https://codepen.io/Dustatron/full/xgGXZj/" target="_blank"><img src="images/Weather-App.png" alt=""></a>
               <p>some basic info about this project</p>
-            </div>
+					</div>
+				</div>
 
-          </div>
+				</div>
+		</div>
 
-      </div>
+		<div id="contact" class="padding">
+			<h2 class="header">Contact</h2>
+			<div class="inner_content">
+			<p>Lorem ipsum dolor sit amet, omnes denique splendide mel id, reque velit neglegentur te vis. Et eum simul scribentur, no qui hinc lobortis inimicus. An lorem mollis postulant eos, aperiri discere imperdiet ei nec, et libris populo platonem sea. Pri ne laoreet luptatum. Pro ea mutat illum. Sed quodsi civibus evertitur et, choro essent facete mel ei.
 
-      <div id="three" class="padding">
-        invisible padding
-      </div>
-
-
-      <div id="Contact">
-        <div class="title">
-          <h2>Contact Info</h2>
-        </div>
-        <div class="sliderThree">
-          <p>Contact info to come.</p>
-
-        </div>
-
-      </div>
-
-      <div class="background">
-        <img src="images/bokeh-01.png" alt="">
-      </div>
+Impedit disputando cu pri, modo fabulas accumsan his an. Quaerendum referrentur has ea, ne has disputationi conclusionemque, cum eu integre alterum. Ad per numquam legendos senserit. Verterem invenire has in. Pri causae assueverit cu.</p>
+				</div>
+		</div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/script.js" charset="utf-8"></script>
-  </body>
+	</div>
+			<div id="background">
+    		<img src="http://www.smarriott.co.uk/wp-content/uploads/2013/09/Elegant_Background-3-1024x576.jpg" class="stretch" alt="" />
+			</div>
+       <script src="js/script.js" charset="utf-8"></script>
+</body>
 </html>

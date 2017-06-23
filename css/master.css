@@ -1,370 +1,266 @@
-html {
-  overflow-x: hidden;a
-}
-body {
-  padding: 0;
-  margin:0;
-  font-family: 'Archivo Narrow', sans-serif;
-  background-color: black;
-  /*transform-style: preserve-3d;*/
-  /*perspective: 1px;*/
-}
-div {
-  margin: 0;
-  padding: 0;
-  border: 0px solid red;
+*{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style:none;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #121212;
+ /*div {
+	border: 1px solid red;
+}*/
+
+/* -----BACKGROUND----- */
+
+#background{
+
+	width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 2em 0em 0.0em 2em;
-  text-decoration: none;
-  font-size: 1.5em;
+.stretch {
+    width:100%;
+    height:100%;
 }
 
-.topnav a:hover {
-  /*background-color: #595859;*/
-  color: #d4b136;
-}
+/* --------- MENU STUFF -------- */
 
-.topnav .icon {
-  display: none;
-}
-
-#navbar {
-  position: fixed ;
-  top: 0;
-  width: 100%;
-  z-index:3;
+.menu_button {
+	position:fixed;
+	padding: 100vh 30px;
+	color: white;
+	cursor: pointer;
+	background-color: #343435;
+/* 	z-index: 10000; */
+	font-size: 2em;
+	opacity: 0;
 
 }
-#logo {
-  padding-top: 0.7em;
-  padding-bottom: 0.5em;
+
+.toggle_menu{
+	position:fixed;
+	padding: 20px 15px;
+	margin: 5px;
+	color: white;
+	cursor: pointer;
+	background-color: #556175;
+	border-radius: 5px;
+	z-index: 100000;
+	font-size: 2em;
+	opacity: 0;
 }
 
-#first-name {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 0;
-  padding: 0;
-}
-#last-name {
-  font-weight: 100;
-  font-size: 1.5em;
-  color: #e98917;
-  margin: 0;
-  padding-top: 0;
-  line-height: 50%;
+.toggle_menu:active {
+	background-color:red;
 }
 
-.float-right {
-  float: right;
-  margin-right: 5em;
+.fa-times {
+	right: 10px;
+	top: 10px;
+	opacity: 0.7;
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	transition: all 0.3s ease-in-out;
+
+}
+.fa-times:hover{
+	opacity: 1;
+	color: orange;
 }
 
-/*-------END NAV------*/
 
-.main {
-  margin: 8em;
-  width: auto;
+.sidebar_menu{
+	position: fixed;
+	width: 250px;
+	margin-left:0px;
+	overflow: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	background-color: rgba(17, 17, 17, 0.9);
+	opacity: 0.9;
+	transition: all 0.3s ease-in-out;
+	text-align:center;
+}
+
+.boxed_item{
+	font-family: 'Open Sans';
+	font-weight: 200;
+	padding: 10px 20px;
+	display: inline-block;
+	border: solid 2px white;
+	box-sizing: border-box;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+
+}
+
+.bold {
+	font-weight: 800;
+}
+
+.logo_title {
+	color:white;
+	font-family: "Open Sans";
+	font-weight: 200;
+	font-size: 12px;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+.nav {
+	margin: 20px 0;
+	display: block;
+	width: 200px;
+	margin-left: 25px;
+	text-align: left;
+}
+
+.nav-item {
+	font-weight: 200;
+	font-family: 'Open Sans';
+	color: white;
+	padding: 12px 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #D8D8D8;
+	border-bottom: solid 1px #D8D8D8;
+	transition: all 0.2s ease-in-out;
+}
+
+.nav-item a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-item a:hover{
+	text-decoration: underline;
+	color: orange;
+}
+
+.hide_menu {
+	margin-left: -250px;
+}
+
+.opacity_one{
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+
+/* ------------BODY STUFF --------- */
+
+.body-margin{
+	margin-left: 256px;
+	transition: all 0.2s ease-in-out;
+}
+
+.content {
+
+	padding-top: 50px;
+	text-align:center;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.2s ease-in-out;
+
 }
 
 .padding {
-  padding: 30px;
-  margin: 10px;
-  visibility: hidden;
+	margin-bottom: 50px;
+
 }
 
-.title {
-  margin: 0;
-  padding: 0;
-  font-size: 25px;
-  text-align: center;
+.header {
+	text-align: left;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 10px 30px;
+	border: solid 1px black;
+	border-top: 15px solid black;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 50%;
+	opacity: 0.9;
+	background-color: rgba(17, 17, 17, 0.3);
+
 }
 
 #about {
-  padding-top: 0;
-  color: white;
-  text-align: center;
-  border-top: 1px solid black;
-  height:40em;
-  border-radius: 0.5em;
-  background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(29,29,29,0.55) 55%, rgba(29,29,29,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(29,29,29,1)), color-stop(45%, rgba(29,29,29,0.55)), color-stop(100%, rgba(255,255,255,0))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(29,29,29,0.55) 55%, rgba(29,29,29,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(29,29,29,0.55) 55%, rgba(29,29,29,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(29,29,29,0.55) 55%, rgba(29,29,29,1) 100%); /* ie10+ */
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(29,29,29,0.55) 55%, rgba(29,29,29,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1d1d', endColorstr='#FFFFFF',GradientType=0 ); /* ie6-9 */s
+	height: 100vh;
 }
 
-#about #about-body {
-  padding: 0em 3em;
+.inner_content {
+	margin: auto;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
 
-#photo img {
-  height: 200px;
-  width: auto;
-  float: left;
-  padding-top: 1em;
-  padding-right: 0.01em;
+.inner_content img {
+	width: 200px;
+	margin: 0px 20px;
 }
 
-#about .right {
-  display: block;
-  float: left;
-  margin-left: 30px;
-  width: 30em;
-  text-align: left;
+#my_links {
+	width: 50%;
+	margin: auto;
+	text-align: right;
+	padding-right: 30px;
+	text-decoration: none;
+	color: #3c9ff0;
 }
 
-#my-links {
-  width: 100%;
-  height: auto;
-  float: right;
-  text-align: right;
+#my_links a{
+
+	padding-right: 30px;
+
 }
 
-#my-links a {
-  text-decoration: none;
-  font-size: 20px;
-  margin: 10px;
-  color: #37b1f6;
+#my_links a:hover{
+	text-decoration: underline;
+	color: #f0a23c;
 }
 
-#my-links a:visited {
-  text-decoration: none;
-  margin: 10px;
+#my_links a:visited {
+	color: #3c9ff0;
 }
 
-#my-links a:hover {
-  text-decoration: none;
-  margin: 10px;
-  color: #e98917;
-  text-decoration: underline;
+#projects {
+	height: 100vh;
 }
 
-#my-links a:active{
-  color: red;
-  text-decoration: underline;
-}
-
-
-#spacer-1 {
-  color: white;
-  text-align: center;
-  height: 80vh;
-  width: 100%;
-}
-
-/*------ PROJECTS -------*/
-
-#Projects {
-  color: black;
-  background-color: white;
-  margin: 0 auto;
-  border: 1px solid black;
-  height:60vh;
-  text-align: center;
-  z-index: -1px;
-}
-
-<<<<<<< HEAD
-#Projects .project-body {
-  margin: 0 10%;
-  display: block;
-=======
-#Projects a {
-  text-decoration: none;
-}
-
-#Projects a:visited {
-    text-decoration: none;
-}
-
-#Projects a:hover {
-    color: #e98917;
-    text-decoration: underline;
-}
-
-#Projects a:active {
-    text-decoration: underline;
-}
->>>>>>> 488c5495edd7126c9089bf33036a6f095fc85b3f
-
-#Projects .project-body {
-  margin: 0 10vw;
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between; /* switched from default (flex-start, see below) */
-  /*background-color: lightyellow;*/
-}
-
-#Projects .p-one {
-  display: block;
-  padding: 0px 50px;
-  float: left;
+#projects .columns {
+	margin: auto;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-self: center;
+	justify-content: space-between;
 }
 
 .project-image img {
   height:170px;
   width: auto;
+	padding: 20px 0px;
 }
 
-#Projects .p-two {
-  display: block;
-  padding: 0px 50px;
-  float: left;
+.col-3 {
+	padding: 0px 0px;
+	font-weight: 400;
 }
 
-#Projects .p-three {
-  display: block;
-  padding: 0px 50px;
-  float: left;
+#projects #one {
+	/*color: red;*/
+	/*font-weight: 400;*/
 }
 
-#Contact {
-  color: white;
-  /*position: absolute;*/
-  padding:2em 2em 0em 5em;
-  margin-top: 10em;
-  top: 300vh;
-  /*width: 100%;*/
-  border: 1px solid black;
-  background-color: #1d1d1d;
-  border-radius: 0.5em;
-  height:60vh;
-  z-index: -1px;
-  opacity: 0.9;
+#contact {
+	height: 80vh;
 }
-
-
-
-.background {
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  z-index: -2;
-  /*transform: translateZ(-1px)scale(4);*/
-  margin: 0;
-  background-color: black;
-
-}
-
-.background img {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-
-.bottom {
-  position: relative;
-  z-index: 500;
-
-}
-
-.floater-back {
-  position: absolute;
-  margin-top: 35em;
-  top: 0em;
-  left:50em;
-  /*z-index: -1;*/
-  /*transform: translateZ(0.5px)scale(2);*/
-}
-
-.floater-front {
-  position: absolute;
-  height: 200vh;
-  width: auto;
-  user-select: none;
-  pointer-events: none;
-
-  /*margin-top: 15em;*/
-  top: 0px;
-  /*left:10em;*/
-  transform:scale(2);
-  z-index: 1;
-  opacity: 0.2;
-}
-
-.show{
-  float: none;
-  display: block;
-  text-align: left;
-
-}
-
-
-@media screen and (max-width: 960px) {
-  .main { margin: 0;}
-  #about{ padding:7em 2em 0em 1em; }
-  #Projects{
-    padding:7em 2em 0em 1em;
-    height:auto;
-
-  }
-  #Projects .project-body {
-    flex-direction: column;
-  }
-  #Contact{ padding:7em 2em 0em 1em; }
-  .topnav .float-right {display: none;}
-  .topnav .icon {
-    float: right;
-    display: block;
-    padding-top: 1.5em;
-    margin-right: 5em;
-    transform: scale(2);
-  }
-
-  .float-right a{
-    float:none;
-    display: block;
-    border: 0px solid red;
-    text-align: right;
-    margin-right: 20%;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .float-right.responsive{
-    float:none;
-    display: block;
-
-
-  }
-
-
-}
-
-/*
-@media screen and (max-width: 960px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: Left;
-  }
-
-}*/

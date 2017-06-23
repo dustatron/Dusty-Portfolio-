@@ -1,44 +1,24 @@
-const menu = function() {
-    var topNav= document.getElementById("menu");
-    if (topNav.className === "float-right") {
-        topNav.className += " responsive";
-    } else {
-        topNav.className = "float-right";
-    }
-}
-
 $(document).ready(function() {
-  let bottomImage = $( "#link" );
+	$(".sidebar_menu").addClass("hide_menu");
+	$(".toggle_menu").addClass("opacity_one");
+	$(".menu_button").addClass("opacity_one");
 
-  $(window).scroll(function(){
-    let yData = $(this).scrollTop();
+	$(".fa-times").click(function(){
+		$(".sidebar_menu").addClass("hide_menu");
+		$(".toggle_menu").addClass("opacity_one");
+		$(".content").removeClass("body-margin");
+		$(".menu_button").addClass("opacity_one");
+	});
 
-    let floaties = function () {
-      // if (yData < 1280) {
-      //   return yData;
-      // } else {
-      //   return '0px';
-      // };
-      return yData;
-    };
-
-    $(".background").css('margin-top', ((yData * 0.3)+'px'));
-
-    $(".sliderOne").css('margin-top', (floaties()*0.4)+'px');
-    $(".sliderTwo").css('margin-top', ((floaties()*0.09)-50)+'px');
-    $(".sliderThree").css('margin-top', ((floaties()*0.09)-110)+'px');
+	$(".toggle_menu").click(function() {
+		$(".content").addClass("body-margin");
+		$(".sidebar_menu").removeClass("hide_menu");
+		$(".toggle_menu").removeClass("opacity_one");
+		$(".menu_button").removeClass("opacity_one");
+	});
 
 
-
-    $(".floater-front").css('top', (floaties()*-1.5)+'px');
-    $(".floater-back").css('top', ((floaties()*0.2)+'px'));
-
-  })
-
-
-
-
-  $("a").on('click', function(event) {
+		  $("a").on('click', function(event) {
 
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -56,9 +36,4 @@ $(document).ready(function() {
         });
       } // End if
     });// on click
-
-
-
-
-
-}); //end doc ready
+});
