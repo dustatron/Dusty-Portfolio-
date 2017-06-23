@@ -1,9 +1,9 @@
 const menu = function() {
-    var topNav= document.getElementById("myTopnav");
-    if (topNav.className === "topnav") {
+    var topNav= document.getElementById("menu");
+    if (topNav.className === "float-right") {
         topNav.className += " responsive";
     } else {
-        topNav.className = "topnav";
+        topNav.className = "float-right";
     }
 }
 
