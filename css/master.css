@@ -4,10 +4,10 @@
 	text-decoration: none;
 	list-style:none;
 }
-/*
- div {
-	border: 1px solid red;
-}*/
+
+	 /*div {
+		border: 1px solid red;
+	}*/
 
 /* -----BACKGROUND----- */
 
@@ -44,19 +44,38 @@
 
 .toggle_menu{
 	position:fixed;
-	padding: 20px 15px;
+	padding: 15px 15px;
 	margin: 5px;
 	color: white;
 	cursor: pointer;
 	background-color: #556175;
-	border-radius: 5px;
+	border-radius: 2px;
 	z-index: 100000;
 	font-size: 2em;
 	opacity: 0;
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(121,138,166,0.96);
+	-moz-box-shadow: 0px 6px 0px 0px rgba(121,138,166,0.96);
+	box-shadow: 0px 6px 0px 0px rgba(121,138,166,0.96);
+	transition: all 0.2s ease;
+}
+
+.toggle_menu:hover {
+	background-color: red;
+	-webkit-box-shadow: 0px 6px 0px 0px #650101;
+	-moz-box-shadow: 0px 6px 0px 0px #650101;
+	box-shadow: 0px 6px 0px 0px #650101;
+	transition: all 0.2s ease;
+
 }
 
 .toggle_menu:active {
-	background-color:red;
+	top: 4px;
+
+	-webkit-box-shadow: 0px 0px 0px 0px #650101;
+	-moz-box-shadow: 0px 0px 0px 0px #650101;
+	box-shadow: 0px 0px 0px 0px #650101;
+	transition: all 0.2s ease;
+
 }
 
 .fa-times {
@@ -147,6 +166,7 @@
 
 .hide_menu {
 	margin-left: -250px;
+	transition: all 0.2s ease-in-out;
 }
 
 .opacity_one{
@@ -185,7 +205,7 @@
 	border: solid 1px black;
 	border-top: 15px solid black;
 	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 5px 5px 0px 0px;
 	width: 80%;
 	opacity: 0.9;
 	background-color: rgba(17, 17, 17, 0.3);
@@ -194,6 +214,7 @@
 
 #about {
 	height: 100vh;
+
 }
 
 .inner_content {
@@ -202,6 +223,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+
+
 }
 
 .inner_content img {
@@ -210,17 +233,22 @@
 }
 
 #my_links {
-	width: 50%;
-	margin: auto;
+	font-weight: 100;
+	font-size: 19px;
+	width: 78%;
+	margin: 20px auto;
 	text-align: right;
-	padding-right: 30px;
+	padding: 3px 10px;
 	text-decoration: none;
-	color: #3c9ff0;
+	color: #0b3f6b;
+	background-color: rgba(242, 242, 242, 0.8);
+	border-radius: 0px 0px 5px 5px;
 }
 
 #my_links a{
 
 	padding-right: 30px;
+	color: #0b406b;
 
 }
 
@@ -230,7 +258,7 @@
 }
 
 #my_links a:visited {
-	color: #3c9ff0;
+	color: #0b406b;
 }
 
 #projects {
@@ -242,22 +270,29 @@
 	width: 80%;
 	height:auto;
 	text-align: left;
-	padding-left: 50px;
+
 
 }
 
 
 .project-image img {
   width: 200px;
-
 	padding: 20px 0px;
 }
 
 .col-3 {
 	display: flex;
-	padding: 0px 0px;
+	padding: 10px;
+	margin-bottom: 15px;
 	font-weight: 400;
-	width: 80%;
+		/*width: 80%;*/
+
+	background-color: rgba(242, 242, 242, 0.4);
+	border: 2px solid rgba(220,220,220, 1);
+	border-radius: 7px;
+	-webkit-box-shadow: inset 0px 0px 16px 0px rgba(220,220,220,0.83);
+	-moz-box-shadow: inset 0px 0px 16px 0px rgba(220,220,220,0.83);
+	box-shadow: inset 0px 0px 16px 0px rgba(220,220,220,0.83);
 }
 
 .right{
