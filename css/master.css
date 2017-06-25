@@ -11,16 +11,27 @@
 
 /* -----BACKGROUND----- */
 
-#background{
-
+#paper-texture {
 	width: 100%;
-  height: 100%;
-  position: fixed;
+	height: 400vh;
+	position: absolute;
+	left: 0px;
+	top: -800px;
+	opacity: 0.1;
+	background-size: cover;
+
+	z-index: -1;
+}
+
+#background{
+	width: 100%;
+  height: 400vh;
+  position: absolute;
   left: 0px;
   top: 0px;
 	background-size: cover;
 
-  z-index: -1;
+  z-index: -2;
 }
 
 .stretch {
@@ -161,7 +172,7 @@
 }
 
 .nav-item a:hover{
-	text-decoration: underline;
+	font-weight: bold;
 	color: orange;
 }
 
@@ -302,6 +313,24 @@
 #contact {
 	height: 80vh;
 }
+
+.viewing{
+	color: #f79b10;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#floater_one {
+	position: absolute;
+
+	margin-left:10%;
+	top: 101vh;
+}
+
+#floater_one img {
+	height: 100px;
+}
+
 /*-------- Responsice ---------*/
 @media screen and (max-width: 960px) {
 
@@ -333,7 +362,8 @@
 		-moz-box-shadow: 0px 6px 0px 0px rgba(121,138,166,0.5);
 		box-shadow: 0px 6px 0px 0px rgba(121,138,166,0.5);
 		overflow-x: hidden;
-		transition: all .5s ease-in-out;
+		-webkit-overflow-scrolling: touch;
+		transition: all .2s ease-in-out;
 
 	}
 
@@ -344,7 +374,7 @@
 		font-size: 18px;
 		font-weight:normal;
 		overflow-x: hidden;
-		transition: all .5s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 
 	.header {
@@ -436,6 +466,7 @@
 		margin-top: 15px;
 		margin-left: 0px;
 	}
+
 
 
  }
