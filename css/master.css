@@ -214,7 +214,7 @@
 }
 
 #about {
-	max-height: 100vh;
+	height: 100vh;
 
 }
 
@@ -397,8 +397,9 @@
 		text-decoration: none;
 		color: #0b3f6b;
 		background-color: rgba(242, 242, 242, 0.8);
-		border-radius: 0px 0px 5px 5px;
+		border-radius: 0px 0px 0px 0px;
 	}
+
 
 	#projects .columns {
 		margin: auto;
