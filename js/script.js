@@ -48,11 +48,8 @@ $(document).ready(function() {
 
 			//background
 			$("#background").css("margin-top", (yScroll*-0.2)+"px");
-			$("#paper-texture").css("top", ((yScroll*0.2)+paperY)+"px");
+			$("#paper-texture").css("top", ((yScroll*0.5)+paperY)+"px");
 
-			//#1 floaty
-			$("#floater_one").css("top", ((yScroll*0.02)+floatOneY)+"vh");
-			$("#floater_one").css("margin-left", ((yScroll*0.2)+floatOneX)+"%");
 
 		});
 

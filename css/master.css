@@ -18,6 +18,7 @@ body {
 /* -----BACKGROUND----- */
 
 #paper-texture {
+	display: none;
 	width: 100%;
 	height: 350vh;
 	position: absolute;
@@ -326,49 +327,24 @@ body {
 	font-size: 16px;
 }
 
-#floater_one {
-	position: absolute;
 
-	margin-left:10%;
-	top: 101vh;
-}
-
-#floater_one img {
-	height: 100px;
+.footer {
+	background-color: black;
+	width: 100%;
+	height: 30px;
 }
 
 /*-------- Responsice ---------*/
-@media screen and (max-width: 960px) {
+
+
+
+@media screen and (max-width: 900px) {
 	body {
 		overflow-x:hidden;
 		width:100%;
 		position:relative;
 		top:0vh;
 		height:53vh;
-	}
-
-
-	#paper-texture {
-		width: 100%;
-		height: 400vh;
-		position: absolute;
-		left: 0px;
-		top: -800px;
-		opacity: 0.1;
-		background-size: cover;
-
-		z-index: -1;
-	}
-
-	#background{
-		width: 100%;
-		height: 400vh;
-	  position: absolute;
-	  left: 0px;
-	  top: 0px;
-		background-size: cover;
-
-	  z-index: -2;
 	}
 
 	.menu_button {
