@@ -3,7 +3,9 @@
 	padding:0;
 	text-decoration: none;
 	list-style:none;
+
 }
+
 
 	 /*div {
 		border: 1px solid red;
@@ -333,7 +335,13 @@
 
 /*-------- Responsice ---------*/
 @media screen and (max-width: 960px) {
-
+	body {
+		overflow-x:hidden;
+		width:100%;
+		position:relative;
+		top:0vh;
+		height:53vh;
+	}
 
 	.menu_button {
 		position: relative;
