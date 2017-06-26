@@ -5,6 +5,8 @@ $(document).ready(function() {
 
 
 	//defualt state
+	$('#background').css("height", ($(window).height()*5)+"px");
+	$('#paper-texture').css("height", ($(window).height()*5)+"px");
 	StartState();
 	highlighter(window.location.hash);
 

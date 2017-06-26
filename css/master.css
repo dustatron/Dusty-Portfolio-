@@ -4,8 +4,11 @@
 	text-decoration: none;
 	list-style:none;
 
-}
 
+}
+body {
+	background-color: gray;
+}
 
 	 /*div {
 		border: 1px solid red;
@@ -341,6 +344,30 @@
 		position:relative;
 		top:0vh;
 		height:53vh;
+	}
+
+
+	#paper-texture {
+		width: 100%;
+
+		position: absolute;
+		left: 0px;
+		top: -800px;
+		opacity: 0.1;
+		background-size: cover;
+
+		z-index: -1;
+	}
+
+	#background{
+		width: 100%;
+
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+		background-size: cover;
+
+	  z-index: -2;
 	}
 
 	.menu_button {
