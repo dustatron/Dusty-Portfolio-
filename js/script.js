@@ -11,11 +11,11 @@ $(document).ready(function() {
 	//button listeners
 	$(".fa-times").click(function() {
 		hide();
-		console.log("x clicked");
+
 	});
 	$(".toggle_menu").click(function() {
 		show();
-		console.log("show clicked");
+
 	});
 
 //menu link listenter
@@ -49,8 +49,8 @@ $(document).ready(function() {
 			$("#paper-texture").css("top", ((yScroll*0.2)+paperY)+"px");
 
 			//#1 floaty
-			$("#floater_one").css("top", ((yScroll*-0.3)+floatOneY)+"vh");
-			$("#floater_one").css("margin-left", ((yScroll*0.4)+floatOneX)+"%");
+			$("#floater_one").css("top", ((yScroll*0.02)+floatOneY)+"vh");
+			$("#floater_one").css("margin-left", ((yScroll*0.2)+floatOneX)+"%");
 
 		});
 
