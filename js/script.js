@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 
 	//defualt state
-	$('#background').css("height", ($(window).height()*5)+"px");
+
 
 	StartState();
 	highlighter(window.location.hash);
@@ -41,7 +41,7 @@ $(document).ready(function() {
 		//Scoll Deplayer for Parallax effect
 		$(window).scroll(function() {
 			var yScroll = $(this).scrollTop();
-			var floatOneY = 101;
+			var floatOneY = 90;
 			var floatOneX = 10;
 			var paperY = -800;
 
