@@ -565,10 +565,11 @@ body {
 		background-color: rgba(242, 242, 242, 0.8);
 		border-radius: 0px 0px 0px 0px;
 	}
-
+	#projects {
+		margin: 45px 0px;
+	}
 
 	#projects .columns {
-		margin: 25px auto;
 		width: 100%;
 		height:auto;
 		text-align: cetner;
@@ -606,7 +607,10 @@ body {
 
 	.contact_inner_content {
 		flex-direction: column;
+		height: 150px;
 	}
+
+
 
 
 
