@@ -7,7 +7,7 @@ $(document).ready(function() {
 	//defualt state
 
 
-	StartState();
+	// StartState();
 	highlighter(window.location.hash);
 
 	//button listeners
