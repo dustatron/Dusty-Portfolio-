@@ -7,7 +7,7 @@ $(document).ready(function() {
 	//defualt state
 
 
-	// StartState();
+	StartState();
 	highlighter(window.location.hash);
 
 	//button listeners
@@ -57,9 +57,12 @@ $(document).ready(function() {
 
 // starting state of nav menu
 const StartState = function() {
-	$(".sidebar_menu").addClass("hide_menu");
-	$(".toggle_menu").addClass("opacity_one");
-	$(".menu_button").addClass("opacity_one");
+
+	var rez = $(window).width();
+	if(rez < 900) {
+		hide();
+	}
+
 };//End Start State
 
 //Highlights text in menu
