@@ -7,7 +7,7 @@ $(document).ready(function() {
 	//defualt state
 
 
-	StartState();
+
 	highlighter(window.location.hash);
 
 	//button listeners
@@ -57,10 +57,11 @@ $(document).ready(function() {
 
 // starting state of nav menu
 const StartState = function() {
-
 	var rez = $(window).width();
 	if(rez < 900) {
 		hide();
+	} else {
+		show();
 	}
 
 };//End Start State
@@ -91,3 +92,4 @@ var show = function() {
 		$(".toggle_menu").removeClass("opacity_one");
 		$(".menu_button").removeClass("opacity_one");
 	};//END SHOW
+StartState();
