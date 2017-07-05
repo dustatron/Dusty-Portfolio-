@@ -11,6 +11,14 @@ body {
 
 }
 
+hr {
+	border: 0;
+	width: 90%;
+	color: black;
+	background-color: black;
+	height: 2px;
+}
+
 	 /*div {
 		border: 1px solid red;
 	}*/
@@ -222,7 +230,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	height: calc(100vh - 300px);
+	height: auto;
 
 }
 
@@ -232,11 +240,14 @@ body {
 }
 
 .inner_content {
+	font-size: 0.8em;
+	font-weight: 300;
 	border: 2px solid black;
 	border-top: 0;
 	border-bottom: 0;
 	background: rgba(255, 255,220, 0.2);
 	margin: auto;
+	height: auto;
 	padding: 10px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -244,6 +255,7 @@ body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	flex-grow: 1;
+
 	transition: all 0.5s ease-in-out;
 
 }
@@ -314,12 +326,6 @@ body {
 
 }
 
-/*.columns {
-	margin: auto;
-	height:auto;
-	text-align: left;
-
-}*/
 
 .project-image img {
   width: 200px;
@@ -344,6 +350,7 @@ body {
 
 .left {
 	order: -1;
+	text-align: left;
 }
 
 .right{
@@ -352,6 +359,26 @@ body {
 	margin-top: 15px;
 	margin-left: 25px;
 }
+
+.project {
+	font-size: 0.8em;
+}
+
+.project_title {
+	display: block;
+	text-align: left;
+	font-weight: bold;
+
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+.project_detal {
+
+	font-size: 0.7em;
+
+}
+
 /*--------- CONTACT*/
 .c_box {
 
@@ -541,19 +568,23 @@ body {
 
 	.inner_content {
 		border: 0px;
-		margin: 0;
-		padding: 3;
+		margin: auto;
+		padding: 10px;
 		width: 98%;
 		max-height: 800px;
-		max-height: inherit;
+		font-weight: 400;
 		display: block;
-		overflow:hidden;
+
 		transition: all 0.5s ease-in-out;
 	}
 
 	.inner_content img {
-		width: 150px;
+		object-fit: cover;
+
+		width: 50%;
+		height: 20em;
 		margin: 0px auto 5px auto;
+		overflow: hidden;
 	}
 
 	#my_links {
@@ -573,7 +604,7 @@ body {
 		margin: 50px 0px;
 		height: 200vh;
 	}
-
+/*---------- PROJECTS*/
 	#projects .columns {
 		width: 100%;
 		height:auto;
@@ -584,7 +615,7 @@ body {
 
 	.project-image img {
 		margin: auto;
-	  width: 200px;
+	  width: 70%;
 		padding: 20px 0px;
 	}
 
@@ -604,11 +635,43 @@ body {
 		box-shadow: inset 0px 0px 16px 0px rgba(220,220,220,0.83);
 	}
 
+	hr {
+		width: 100%;
+	}
+
 	.right{
 		text-align: center;
 		margin-top: 15px;
 		margin-left: 0px;
 	}
+	.left {
+		order: -1;
+		text-align: center;
+	}
+
+	.project {
+		width: 90%;
+		margin: auto;
+		padding-bottom: 1em;
+		font-size: 0.9em;
+		text-align: left;
+		font-weight: 400;
+	}
+
+	.project_title {
+		display: block;
+		font-weight: bold;
+		text-align: center;
+		font-size: 0.8em;
+		text-transform: uppercase;
+	}
+
+	.project_detal {
+
+		font-size: 0.8em;
+		font-weight: 300;
+
+	/*---------- Contacts*/
 
 	#contact {
 			margin-bottom: 0px;
