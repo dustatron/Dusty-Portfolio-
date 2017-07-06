@@ -645,7 +645,8 @@ hr {
 	}
 
 	.right{
-		text-align: center;
+		padding-left: 1.5em;
+		text-align: left;
 		margin-top: 15px;
 		margin-left: 0px;
 	}
@@ -655,7 +656,7 @@ hr {
 	}
 
 	.project {
-		width: 90%;
+		width: 100%;
 		margin: auto;
 		padding-bottom: 1em;
 		font-size: 0.9em;
@@ -663,17 +664,24 @@ hr {
 		font-weight: 400;
 	}
 
+	.tech {
+		margin: auto;
+		width: 90%;
+		text-align: left;
+		font-weight: bolder;
+	}
+
 	.project_title {
 		display: block;
 
-		text-align: center;
-		font-size: 0.8em;
+		font-weight: bolder;
+		font-size: 1.2em;
 		text-transform: uppercase;
 	}
 
 	.project_detal {
 
-		font-size: 0.8em;
+		font-size: 1em;
 		font-weight: 300;
 
 	/*---------- Contacts*/
