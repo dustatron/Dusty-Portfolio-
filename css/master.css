@@ -559,14 +559,13 @@ hr {
 	.a_box {
 		margin:auto;
 		height: auto;
-		margin-bottom: 10em;
+		margin-bottom: 3em;
 	}
 
 	#about {
-
 		height: auto;
 		margin:auto;
-		margin-bottom: 10em;
+		margin-bottom: 3em;
 
 	}
 
@@ -611,15 +610,15 @@ hr {
 		border-radius: 0px 0px 0px 0px;
 	}
 	#projects {
-		margin: 10em 0em;
+		margin: 0em 0em 3em 0em;
 		height: auto;
 	}
 /*---------- PROJECTS*/
 	#projects .columns {
 		width: 100%;
-		margin-top: 2em;
 		height:auto;
-		text-align: cetner;
+		text-align: center;
+
 
 	}
 
