@@ -22,10 +22,10 @@ hr {
 	background-color: black;
 	height: 2px;
 }
-	/*
-		 div {
-			border: 1px solid red;
-		}*/
+
+	 /*div {
+		border: 1px solid red;
+	}*/
 
 /* -----BACKGROUND----- */
 
@@ -247,7 +247,7 @@ hr {
 	background: rgba(255, 255,220, 0.2);
 	margin: auto;
 	height: auto;
-	padding: 20px;
+	padding: 10px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -261,7 +261,7 @@ hr {
 
 .inner_content img {
 	width: 200px;
-	margin: 10px 20px;
+	margin: 0px 20px;
 
 }
 
@@ -457,12 +457,9 @@ hr {
 ---------- MISC*/
 
 .viewing{
-
 	color: #f79b10;
-	text-shadow: 0 0 5px #f79b10;
 	font-weight: bolder;
 	font-size: 18px;
-	opacity: 0.9;
 }
 
 
@@ -557,15 +554,12 @@ hr {
 	}
 
 	.a_box {
-		margin:auto;
 		height: auto;
 		margin-bottom: 10em;
 	}
 
 	#about {
-
 		height: auto;
-		margin:auto;
 		margin-bottom: 10em;
 
 	}
@@ -579,10 +573,10 @@ hr {
 	.inner_content {
 		border: 0px;
 		margin: auto;
-		padding: 20px;
-
+		padding: 10px;
+		width: 98%;
 		max-height: 800px;
-		/*font-weight: 400;*/
+		font-weight: 400;
 		display: block;
 
 		transition: all 0.5s ease-in-out;
@@ -593,7 +587,7 @@ hr {
 
 		width: 60%;
 		height: auto;
-		margin: 0px auto 25px auto;
+		margin: 0px auto 5px auto;
 		overflow: hidden;
 	}
 
@@ -648,7 +642,6 @@ hr {
 
 	hr {
 		width: 100%;
-		margin: 10px 25px 10px 0px;
 	}
 
 	.right{
@@ -656,7 +649,6 @@ hr {
 		text-align: left;
 		margin-top: 15px;
 		margin-left: 0px;
-		margin-right: 25px;
 	}
 	.left {
 		order: -1;
