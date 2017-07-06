@@ -22,6 +22,7 @@ $(document).ready(function() {
 
 //menu link listenter
 	$("a").on('click', function(event) {
+		checkMobile();
     if (this.hash !== "") {
     	event.preventDefault();
 
@@ -34,9 +35,9 @@ $(document).ready(function() {
         });
 
 				highlighter(hash);
-      };
-			 // End if
-    });// on click
+      }; // End if
+
+    });// End on click
 
 		//Scoll Deplayer for Parallax effect
 		$(window).scroll(function() {
@@ -54,6 +55,13 @@ $(document).ready(function() {
 		});
 
 }); //End document ready
+
+const checkMobile = function() {
+	if ($(window).width()<= 900) {
+		hide();
+	};
+
+};
 
 // starting state of nav menu
 const StartState = function() {
