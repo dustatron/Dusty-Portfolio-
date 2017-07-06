@@ -650,8 +650,7 @@ hr {
 	}
 
 	.right{
-		padding-left: 1.5em;
-		text-align: left;
+		text-align: center;
 		margin-top: 15px;
 		margin-left: 0px;
 		margin-right: 25px;
@@ -662,7 +661,7 @@ hr {
 	}
 
 	.project {
-		width: 100%;
+		width: 90%;
 		margin: auto;
 		padding-bottom: 1em;
 		font-size: 0.9em;
@@ -670,6 +669,7 @@ hr {
 		font-weight: 400;
 	}
 
+<<<<<<< HEAD
 	.tech {
 		margin: auto;
 		/*width: 90%;*/
@@ -679,17 +679,19 @@ hr {
 		font-weight: bolder;
 	}
 
+=======
+>>>>>>> parent of 71ac627... tweeked the project section for mobile
 	.project_title {
 		display: block;
 
-		font-weight: bolder;
-		font-size: 1.2em;
+		text-align: center;
+		font-size: 0.8em;
 		text-transform: uppercase;
 	}
 
 	.project_detal {
 
-		font-size: 1em;
+		font-size: 0.8em;
 		font-weight: 300;
 
 	/*---------- Contacts*/
