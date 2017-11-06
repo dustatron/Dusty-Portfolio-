@@ -324,13 +324,24 @@ hr {
 	flex-direction: column;
 	flex: 1;
 	height: auto;
+	margin-top: 50px;
 
 }
 
 
-.project-image img {
-  width: 200px;
-	padding: 20px 0px;
+.profile_image {
+
+  width: 300px;
+	height: auto;
+	padding: 5px 5px;
+	margin: 0;
+}
+
+.project-image img{
+	width: 200px;
+	height: auto;
+	/*padding: 10px 10px;*/
+	margin-right: 150px;
 }
 
 .col-3 {
@@ -392,6 +403,8 @@ hr {
 
 
 	padding:0;
+	/*padding-top: 50px;*/
+	margin-top: 50px;
 }
 
 #contact {
@@ -458,7 +471,7 @@ hr {
 
 .viewing{
 
-	color: red;
+	color: r;
 	text-shadow: 0 0 5px #f79b10;
 	font-weight: bolder;
 	/*font-size: 18px;*/
@@ -660,6 +673,7 @@ hr {
 	.left {
 		order: -1;
 		text-align: center;
+
 	}
 
 	.project {
