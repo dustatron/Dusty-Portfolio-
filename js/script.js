@@ -1,103 +1,47 @@
 
+function anchorLinkHandler(e) {
 
-$(document).ready(function() {
-	//hides and shows nav menu
-
-
-	//defualt state
-
-
-
-	highlighter(window.location.hash);
-
-	//button listeners
-	$(".fa-times").click(function() {
-		hide();
-
-	});
-	$(".toggle_menu").click(function() {
-		show();
-
-	});
-
-//menu link listenter
-	$("a").on('click', function(event) {
-		checkMobile();
-    if (this.hash !== "") {
-    	event.preventDefault();
-
-      var hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 700, 'swing',function(){
-					window.location.hash = hash;
-        });
-
-				highlighter(hash);
-      }; // End if
-
-    });// End on click
-
-		//Scoll Deplayer for Parallax effect
-		$(window).scroll(function() {
-			var yScroll = $(this).scrollTop();
-			var floatOneY = 90;
-			var floatOneX = 10;
-			var paperY = -800;
-
-
-			//background
-			$("#background").css("margin-top", (yScroll*-0.2)+"px");
-			$("#paper-texture").css("top", ((yScroll*0.5)+paperY)+"px");
-
-
-		});
-
-}); //End document ready
-
-const checkMobile = function() {
-	if ($(window).width()<= 900) {
-		hide();
+	var distanceToTop = function (el) {
+		return Math.floor(el.getBoundingClientRect().top)
 	};
 
-};
-
-// starting state of nav menu
-const StartState = function() {
-	var rez = $(window).width();
-	if(rez < 900) {
-		hide();
+	e.preventDefault();
+	//Grabs Object
+	var targetID = this.getAttribute("href"); 
+	var targetAnchor = document.querySelector(targetID);
+	//Checks for truthy
+	if(!targetAnchor) {
+		console.log("Error TargetAnchor returned falsy");
+		return 
 	} else {
-		show();
-	}
+		console.log("targetAnchor returned truthy");
+		console.log(targetAnchor)
+	};
 
-};//End Start State
+	var originalTop = distanceToTop(targetAnchor);
 
-//Highlights text in menu
-const highlighter = function(hash) {
-	var local = hash.slice(1);
-	if(local == "about" || local == "projects" || local == "contact") {
-		$(".nav-item").removeClass("viewing");
-		$("#menu_"+local).addClass("viewing");
-	} else {
-		$(".nav-item").removeClass("viewing");
-		$("#menu_about").addClass("viewing");
-	}; //End if
-};//Ened Highlighter
+	console.log('originalTop = ' + originalTop ); //TEST
 
-//SHOW AND HIDE NAV MENU
-var hide = function() {
-		$(".sidebar_menu").addClass("hide_menu");
-		$(".toggle_menu").addClass("opacity_one");
-		$(".content").removeClass("body-margin");
-		$(".menu_button").addClass("opacity_one");
-	}; //END HIDE
+	window.scrollBy(
+		{ top: originalTop,
+		  left: 0,
+		  behavior: "smooth"
+		});
 
-var show = function() {
-		$(".content").addClass("body-margin");
-		$(".sidebar_menu").removeClass("hide_menu");
-		$(".toggle_menu").removeClass("opacity_one");
-		$(".menu_button").removeClass("opacity_one");
-	};//END SHOW
-StartState();
+	var checkIfDone = setInterval(function() {
+		var atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight -2;
+		if (distanceToTop(targetAnchor) === 0 || atBottom) {
+			targetAnchor.tabIndex = "-1";
+			targetAnchor.focus();
+			window.history.pushState("", "", targetID);
+			clearInterval(checkIfDone);
+		}
+	}, 100); //END checkIfDone
+}
+
+var linksToAnchors = document.querySelectorAll('a[href^="#"]');
+console.log("linksToAnchors" + linksToAnchors);
+
+linksToAnchors.forEach(function(each){
+	each.onclick = anchorLinkHandler;
+});

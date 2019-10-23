@@ -43,6 +43,15 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
 
+.u-margin-top-small {
+  margin-bottom: 1rem; }
+
+.u-margin-top-med {
+  margin-bottom: 4rem; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -162,17 +171,21 @@ body {
   background-color: white;
   font-size: 1.5rem;
   padding: 2.5rem;
-  text-align: center;
+  text-align: left;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all .3s; }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
-    color: transparent; }
+  transition: all .3s;
+  position: relative; }
+  .feature-box__website {
+    width: 100%; }
+  .feature-box__links {
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #777;
+    background-color: #f7f7f7;
+    border-radius: 0 0 5px 5px; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.2); }
@@ -202,6 +215,8 @@ body {
     width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc( 3* ((100% - 3 * 6rem) / 4) + ( 2 * 6rem)); }
+  .row:focus {
+    outline: none; }
 
 .header {
   height: 95vh;
@@ -253,6 +268,15 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.footer {
+  height: 100vh;
+  margin-top: -51rem;
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.7), rgba(255, 119, 48, 0.9)), url(../img/rohro-clark-Jgdbp3pPj9Q-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  clip-path: polygon(0 60%, 50% 50%, 100% 60%, 100% 100%, 0 100%); }
 
 .section-projects {
   background-color: #f7f7f7;
