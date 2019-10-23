@@ -38,3 +38,5 @@ var linksToAnchors = document.querySelectorAll('a[href^="#"]');
 linksToAnchors.forEach(function(each){
 	each.onclick = anchorLinkHandler;
 });
+
+
