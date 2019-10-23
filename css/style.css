@@ -44,13 +44,16 @@ body {
   margin-bottom: 1rem; }
 
 .u-margin-top-small {
-  margin-bottom: 1rem; }
+  margin-top: 1rem; }
 
 .u-margin-top-med {
-  margin-bottom: 4rem; }
+  margin-top: 4rem; }
 
 .u-margin-top-big {
-  margin-bottom: 8rem; }
+  margin-top: 8rem; }
+
+.no-focus:focus {
+  outline: none; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -58,7 +61,7 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   color: #777;
-  border-radius: 10rem;
+  border-radius: 1rem;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem; }
@@ -79,6 +82,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #034f1c;
+  color: #777; }
+  .btn--green::after {
+    background-color: #28b485; }
 
 .btn:after {
   content: "";
@@ -189,9 +198,11 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .feature-box:focus {
+    outline: none; }
 
 .row {
-  max-width: 114rem;
+  max-width: 130rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -269,16 +280,88 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.footer {
-  height: 100vh;
-  margin-top: -51rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.7), rgba(255, 119, 48, 0.9)), url(../img/rohro-clark-Jgdbp3pPj9Q-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom;
+.header-menu__list-items {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all .2s;
+  padding: 1rem 2rem; }
+  .header-menu__list-items:not(:last-child) {
+    border-right: 2px solid #dddbdb; }
+
+.header-menu__link {
+  transition: all .3s; }
+  .header-menu__link:link, .header-menu__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f7f7f7;
+    display: inline-block; }
+  .header-menu__link:hover {
+    color: #fff;
+    transform: translateY(-0.8rem); }
+  .header-menu__link:active {
+    transform: translateY(0.1rem);
+    color: #034f1c; }
+
+.header-tech {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #fff;
   position: relative;
-  clip-path: polygon(0 60%, 50% 50%, 100% 60%, 100% 100%, 0 100%); }
+  width: 65%;
+  display: inline-block;
+  border-top: 2px dotted #dddbdb; }
+  .header-tech__primary {
+    padding-top: 2rem; }
+  .header-tech__list {
+    list-style: none;
+    display: inline-block;
+    width: 100%; }
+  .header-tech__list-item {
+    display: inline-block;
+    padding: 0 1rem; }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 8rem;
+    filter: invert(1); }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    background-color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .15s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3); }
+  .footer__copyright {
+    text-align: left;
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
 
 .section-projects {
   background-color: #f7f7f7;
   padding: 40rem 0;
-  margin-top: -30vh; }
+  margin-top: -35vh; }

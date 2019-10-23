@@ -6,8 +6,14 @@
 
 .u-margin-bottom-small { margin-bottom: 1rem; }
 
-.u-margin-top-small { margin-bottom: 1rem; }
+.u-margin-top-small { margin-top: 1rem; }
 
-.u-margin-top-med { margin-bottom: 4rem; }
+.u-margin-top-med { margin-top: 4rem; }
 
-.u-margin-top-big { margin-bottom: 8rem; }
+.u-margin-top-big { margin-top: 8rem; }
+
+.no-focus {
+    &:focus {
+     outline: none;
+    }
+}

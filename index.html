@@ -21,22 +21,37 @@
         <span class="heading-primary--main">Dusty McCord</span>
         <span class="heading-primary--sub">Developer Portfolio</span>
       </h1>
-      <a href="#projects" class="btn btn--white btn--animate">See Work</a>
+      <ul class="header-menu">
+        <il class="header-menu__list-items"><a href="#projects" class="header-menu__link">Work</a></il>
+        <il class="header-menu__list-items"><a href="#about" class="header-menu__link">About</a></il>
+        <il class="header-menu__list-items"><a href="https://github.com/dustatron?tab=repositories" class="header-menu__link" target="blank">GitHub</a></il>
+      </ul>
+      <div class="header-tech">
+          <h3 class="header-tech__primary">Technologies</h3>
+          <ul class="header-tech__list">
+            <li class="header-tech__list-item">html</li>
+            <li class="header-tech__list-item">CSS + Sass</li>
+            <li class="header-tech__list-item">Javascipt + Node.js</li>
+          </ul>
+        </div>
     </div>
+
   </header>
 
   <!-- PAGE BODY -->
   <main>
     <!-- PORJECT SECTION -->
-    <section class="section-projects">
+    <section class="section-projects no-focus" >
       <!-- ROW 1 -->
-        <div class="row" id="projects">
-          <div class="u-margin-top-big"></div>
+        <div class="row no-focus" >
           <!-- \\\\\\ PFV ////// -->
-            <div class="col-1-of-3">
-                <div class="feature-box">
+            <div class="col-1-of-3 no-focus" id="projects">
+              
+                <div class="feature-box u-margin-top-med">
                   <h3 class="heading-tertiary u-margin-bottom-small"> Portland's Funniest Video</h3>
-                  <img src="img/PFV-small.png" alt="site image" class='feature-box__website'>
+                  <a href="http://www.portlandsfunniestvideo.com" target="blank">
+                    <img src="img/PFV-small.png" alt="site image" class='feature-box__website'>
+                  </a>
                     <p class="feature-box__text">
                         This site achived two goals. 
                         <br>
@@ -45,17 +60,18 @@
                         2) Allow admits to accept and schedual a shorts for a specific month. 
                     </p>
                     <div class="feature-box__links">
-                      <a href="#">git</a> | <a href="#">Working Site</a>
+                      <a href="https://github.com/dustatron/pdx-comedy-filmfest" target='blank'>GitHub</a> | <a href="http://www.portlandsfunniestvideo.com" target="blank">Working Site</a>
                     </div>
                 </div>
               </div>
           <!-- ////// END PFV \\\\\\ -->
-          
-          <!-- \\\\\\ Backyard Movie ////// -->
+          <!-- \\\\\\ Backyard Movie Rails ////// -->
           <div class="col-1-of-3">
-              <div class="feature-box">
-                <h3 class="heading-tertiary u-margin-bottom-small"> Backyard Movie </h3>
-                <img src="img/BYM.png" alt="site image" class='feature-box__website'>
+              <div class="feature-box u-margin-top-med">
+                <h3 class="heading-tertiary u-margin-bottom-small"> Movie Voting App : Rails </h3>
+                <a href="https://pdx-mccord.herokuapp.com" target="blank">
+                  <img src="img/BYM.png" alt="site image" class='feature-box__website'>
+                </a>  
                   <p class="feature-box__text">
                       This site achived two goals. 
                       <br>
@@ -64,17 +80,19 @@
                       2) Allow admits to accept and schedual a shorts for a specific month. 
                   </p>
                   <div class="feature-box__links">
-                    <a href="#">git</a> | <a href="#">Working Site</a>
+                    <a href="https://github.com/dustatron/McMovie" target="blank">GitHub</a> | <a href="https://pdx-mccord.herokuapp.com" target="blank">Working Site</a>
                   </div>
               </div>
             </div>
         <!-- ////// END Backyard Movie \\\\\\ -->
-            
-        <!-- \\\\\\ Video Commenting ////// -->
+          
+          <!-- \\\\\\ Backyard Movie Ember////// -->
           <div class="col-1-of-3">
-              <div class="feature-box">
-                <h3 class="heading-tertiary u-margin-bottom-small"> Time Based Video Comments </h3>
-                <img src="img/Video-Commandor.png" alt="site image" class='feature-box__website'>
+              <div class="feature-box u-margin-top-med">
+                <h3 class="heading-tertiary u-margin-bottom-small"> Movie Voting App : Ember </h3>
+                <a href="https://github.com/dustatron/ember-by-movies" target="blank">
+                  <img src="img/BYM.png" alt="site image" class='feature-box__website'>
+                </a>  
                   <p class="feature-box__text">
                       This site achived two goals. 
                       <br>
@@ -83,21 +101,23 @@
                       2) Allow admits to accept and schedual a shorts for a specific month. 
                   </p>
                   <div class="feature-box__links">
-                    <a href="#">git</a> | <a href="#">Working Site</a>
+                    <a href="https://github.com/dustatron/ember-by-movies" target="blank">GitHub</a> | <a href="https://idealist-ae31b.firebaseapp.com/posts" target="blank">Working Site</a>
                   </div>
               </div>
             </div>
-        <!-- ////// Video Commenting \\\\\\ -->
-            
+        <!-- ////// END Backyard Movie \\\\\\ -->
         </div>
 
       <!-- ROW 2 -->
         <div class="row">
-          <!-- \\\\\\ Podcast Site ////// -->
+
+          <!-- \\\\\\ Video Commenting ////// -->
           <div class="col-1-of-3">
-              <div class="feature-box">
-                <h3 class="heading-tertiary u-margin-bottom-small"> Podcast Site </h3>
-                <img src="img/Video-Commandor.png" alt="site image" class='feature-box__website'>
+              <div class="feature-box ">
+                <h3 class="heading-tertiary u-margin-bottom-small"> Time Based Video Comments </h3>
+                <a href="https://video-commander.firebaseapp.com/?https://firebasestorage.googleapis.com/v0/b/video-commander.appspot.com/o/Mercurial%20Fast%20Forward_R17_AppleTV_Large.m4v?alt=media&token=54df1a66-e2c1-4e55-a916-faead37d5985" target="blank">
+                  <img src="img/Video-Commandor.png" alt="site image" class='feature-box__website'>
+                </a>
                   <p class="feature-box__text">
                       This site achived two goals. 
                       <br>
@@ -106,17 +126,19 @@
                       2) Allow admits to accept and schedual a shorts for a specific month. 
                   </p>
                   <div class="feature-box__links">
-                    <a href="#">git</a> | <a href="#">Working Site</a>
+                    <a href="https://github.com/dustatron/VideoCommander" target="blank">GitHub</a> | <a href="https://video-commander.firebaseapp.com/?https://firebasestorage.googleapis.com/v0/b/video-commander.appspot.com/o/Mercurial%20Fast%20Forward_R17_AppleTV_Large.m4v?alt=media&token=54df1a66-e2c1-4e55-a916-faead37d5985" target="blank">Working Site</a>
                   </div>
               </div>
             </div>
-        <!-- ////// END Podcast site \\\\\\ -->
+        <!-- ////// Video Commenting \\\\\\ -->
 
-          <!-- \\\\\\ Weather App ////// -->
+        <!-- \\\\\\ Weather App ////// -->
           <div class="col-1-of-3">
               <div class="feature-box">
-                <h3 class="heading-tertiary u-margin-bottom-small"> Weather App </h3>
-                <img src="img/Weather-App.png" alt="site image" class='feature-box__website'>
+                <h3 class="heading-tertiary"> Weather App </h3>
+                <a href="https://codepen.io/Dustatron/full/xgGXZj/" target="blank">
+                  <img src="img/Weather-App.png" alt="site image" class='feature-box__website'>
+                </a>
                   <p class="feature-box__text">
                       This site achived two goals. 
                       <br>
@@ -125,37 +147,40 @@
                       2) Allow admits to accept and schedual a shorts for a specific month. 
                   </p>
                   <div class="feature-box__links">
-                    <a href="#">git</a> | <a href="#">Working Site</a>
+                    <a href="https://codepen.io/Dustatron/pen/xgGXZj" target="blank">CodePen</a> | <a href="https://codepen.io/Dustatron/full/xgGXZj/" target="black">Working Site</a>
                   </div>
               </div>
             </div>
         <!-- ////// END Weather \\\\\\ -->
-
-          <!-- \\\\\\ Weather App ////// -->
-          <div class="col-1-of-3">
-              <div class="feature-box">
-                <h3 class="heading-tertiary u-margin-bottom-small"> Weather App </h3>
-                <img src="img/Weather-App.png" alt="site image" class='feature-box__website'>
-                  <p class="feature-box__text">
-                      This site achived two goals. 
-                      <br>
-                      1) Allow filmmakers to submit their short filmes. 
-                      <br>
-                      2) Allow admits to accept and schedual a shorts for a specific month. 
-                  </p>
-                  <div class="feature-box__links">
-                    <a href="#">git</a> | <a href="#">Working Site</a>
-                  </div>
-              </div>
-            </div>
-        <!-- ////// END Weather \\\\\\ -->
-        </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    Here is a footer  </footer>
+  <footer class="footer" id="about">
+      <div class="footer__logo-box">
+          <img src="img/solar-energy.png" alt="Full Logo" class="footer__logo">
+          <div class="row">
+              <div class="col-1-of-2">
+                  <div class="footer__navigation">
+                      <ul class="footer__list">
+                          <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-1-of-2">
+                  <div class="footer__copyright">
+                      Built by <a href="#" class="footer__link">Dusty McCord</a> For this online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Dusty McCord. You are 100% allowed to use this webpage for both personal and commerial use. 
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </footer>
 </body>
 <script src="js/script.js"></script>
 </html>
