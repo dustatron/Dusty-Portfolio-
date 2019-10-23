@@ -235,6 +235,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 90%, 0 70%);
   clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 90%, 0 70%); }
   .header__text-box {
     position: absolute;

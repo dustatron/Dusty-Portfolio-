@@ -1,4 +1,3 @@
-
 function anchorLinkHandler(e) {
 
 	var distanceToTop = function (el) {
@@ -13,14 +12,9 @@ function anchorLinkHandler(e) {
 	if(!targetAnchor) {
 		console.log("Error TargetAnchor returned falsy");
 		return 
-	} else {
-		console.log("targetAnchor returned truthy");
-		console.log(targetAnchor)
 	};
 
 	var originalTop = distanceToTop(targetAnchor);
-
-	console.log('originalTop = ' + originalTop ); //TEST
 
 	window.scrollBy(
 		{ top: originalTop,
@@ -40,7 +34,6 @@ function anchorLinkHandler(e) {
 }
 
 var linksToAnchors = document.querySelectorAll('a[href^="#"]');
-console.log("linksToAnchors" + linksToAnchors);
 
 linksToAnchors.forEach(function(each){
 	each.onclick = anchorLinkHandler;
