@@ -3,24 +3,30 @@
     padding: 10rem 0;
     font-size: 1.4rem;
     color: $color-grey-light-1;
+    position: relative;
+    text-align: center;
     
     &__logo-box {
         text-align: center;
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
     }
 
     &__logo {
-        width: 15rem;
+        width: 5.5rem;
         height: auto;
         margin-bottom: 8rem;
         filter: invert(1);
+
     }
 
     &__navigation {
-        // text-align: left;
         border-top: 1px solid $color-grey;
         padding-top: 2rem;
-        display: inline-block;
-        
+        display: inline-block;     
+        width: 80%;
+
     }
 
     &__list {
@@ -54,11 +60,48 @@
         }
     }
 
-    &__copyright {
-        text-align: left;
-        border-top: 1px solid $color-grey;
-        padding-top: 2rem;
-        width: 80%;
-        float: right;
+    &__about {
+        &--title {
+
+        }
     }
+
+    &__icon-box {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+ 
+    }
+
+    &__icon {
+        width: 12rem;
+        height: auto;
+    }
+
+    &__about-copy {
+        font: 1.6rem;
+        text-align: left;
+    }
+
+    &__list {
+        list-style: none;
+
+        &--item {
+            text-align: left;
+            padding-top: 2rem;
+            margin-top: 1rem;
+
+            &:not(last-child) {
+               border-bottom: 1px solid $color-grey;
+            }
+
+        }
+    }
+
+    // &__copyright {
+    //     text-align: left;
+    //     border-top: 1px solid $color-grey;
+    //     padding-top: 2rem;
+    //     width: 80%;
+    //     float: right;
+    // }
 }
