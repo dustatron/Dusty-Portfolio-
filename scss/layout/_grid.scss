@@ -8,13 +8,19 @@
         margin-bottom: $gutter-vertical;
 
         @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;
+            margin-bottom: 0;
         }
     }
     
     @include respond(tab-port) {
         max-width: 90rem;
         padding: 3rem 3rem;
+
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 1rem 0rem;
 
     }
 
@@ -28,7 +34,7 @@
 
             @include respond(tab-port) {
                 margin-right: 0;
-                margin-bottom: $gutter-vertical-small;
+                margin-bottom:$gutter-vertical-small;
             }
         }
 

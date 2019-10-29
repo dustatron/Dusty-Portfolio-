@@ -6,13 +6,14 @@
   box-sizing: inherit; }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 62.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 65%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -90,6 +91,16 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+
+.heading-cards {
+  color: #55c57a;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .5s; }
+  .heading-cards:hover {
+    transform: scale(1.03) translateY(-3px); }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -281,11 +292,15 @@ body {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 62.5em) {
       .row:not(:last-child) {
-        margin-bottom: 4rem; } }
+        margin-bottom: 0; } }
   @media only screen and (max-width: 62.5em) {
     .row {
       max-width: 90rem;
       padding: 3rem 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .row {
+      width: 100%;
+      padding: 1rem 0rem; } }
   .row:after {
     content: "";
     display: table;
@@ -328,6 +343,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      height: 75vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 120vh; } }
 
 .header-menu__list-items {
   font-size: 2.2rem;
@@ -337,6 +358,13 @@ body {
   padding: 1rem 2rem; }
   .header-menu__list-items:not(:last-child) {
     border-right: 2px solid #dddbdb; }
+    @media only screen and (max-width: 62.5em) {
+      .header-menu__list-items:not(:last-child) {
+        border-right: none; } }
+  @media only screen and (max-width: 62.5em) {
+    .header-menu__list-items {
+      display: block;
+      padding: 0rem; } }
 
 .header-menu__link {
   transition: all .3s; }
@@ -409,7 +437,7 @@ body {
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.3); }
+    transform: scale(1.03); }
   .footer__icon-box {
     margin-top: 3rem;
     margin-bottom: 3rem; }

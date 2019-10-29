@@ -18,6 +18,14 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
+    @include respond(tab-port) { // width < 900?
+        height: 75vh;
+    }
+
+    @include respond(phone) { // width < 900?
+        height: 120vh;
+    }
     
 }
 
@@ -34,6 +42,15 @@
 
         &:not(:last-child) {
             border-right: 2px solid $color-grey-light-2;
+
+            @include respond(tab-port) { 
+                border-right: none;
+            }
+        }
+
+        @include respond(tab-port) { 
+            display: block;
+            padding: 0rem;
         }
 
 

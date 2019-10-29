@@ -5,6 +5,7 @@ function anchorLinkHandler(e) {
 	};
 
 	e.preventDefault();
+;
 	//Grabs Object
 	var targetID = this.getAttribute("href"); 
 	var targetAnchor = document.querySelector(targetID);
