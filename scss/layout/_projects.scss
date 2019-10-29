@@ -1,0 +1,25 @@
+.projects{
+    &__title{
+       color: $color-grey;
+       font-size: 3rem;
+       text-align: center;
+       padding-bottom: 0rem;
+       margin-bottom: .2rem;
+
+       &--sub {
+           font-size: 1.6rem;
+           text-align: center;
+       }
+    }
+
+    &__email-link {
+
+        &:link,
+        &:visited {
+            color: $color-tertiary-light;
+            text-decoration: none;
+            text-transform: capitalize;
+
+        }
+    }
+}

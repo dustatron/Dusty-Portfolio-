@@ -39,7 +39,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 3rem; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -103,7 +103,7 @@ body {
   margin-bottom: 8rem; }
 
 .u-margin-bottom-med {
-  margin-bottom: 4rem; }
+  margin-bottom: 6rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
@@ -119,6 +119,12 @@ body {
 
 .no-focus:focus {
   outline: none; }
+
+.u-border-right {
+  border-right: 1px solid #777; }
+
+.u-color-grey {
+  color: #777; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -410,6 +416,18 @@ body {
   .footer__icon {
     width: 12rem;
     height: auto; }
+  .footer__bio {
+    display: inline-block;
+    margin: auto 0;
+    width: 80%; }
+  .footer__about {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    color: #777;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem; }
   .footer__about-copy {
     font: 1.6rem;
     text-align: left; }
@@ -421,6 +439,21 @@ body {
       margin-top: 1rem; }
       .footer__list--item:not(last-child) {
         border-bottom: 1px solid #777; }
+
+.projects__title {
+  color: #777;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 0rem;
+  margin-bottom: .2rem; }
+  .projects__title--sub {
+    font-size: 1.6rem;
+    text-align: center; }
+
+.projects__email-link:link, .projects__email-link:visited {
+  color: #2998ff;
+  text-decoration: none;
+  text-transform: capitalize; }
 
 .section-projects {
   background-color: #f7f7f7;
