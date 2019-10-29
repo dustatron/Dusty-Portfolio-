@@ -1,6 +1,8 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -12,7 +14,8 @@
     
     @include respond(tab-port) {
         max-width: 90rem;
-        padding: 0 3rem;
+        padding: 3rem 3rem;
+
     }
 
     @include clearfix;

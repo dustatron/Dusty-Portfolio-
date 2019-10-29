@@ -10,7 +10,7 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 62.5em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -20,7 +20,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 62.5em) {
     body {
       padding: 0; } }
 
@@ -76,7 +76,7 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 62.5em) {
     .heading-secondary {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -268,16 +268,18 @@ body {
 
 .row {
   max-width: 130rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .row:not(:last-child) {
         margin-bottom: 4rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 62.5em) {
     .row {
       max-width: 90rem;
-      padding: 0 3rem; } }
+      padding: 3rem 3rem; } }
   .row:after {
     content: "";
     display: table;
@@ -286,11 +288,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media only screen and (max-width: 62.5em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 4rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
