@@ -20,14 +20,14 @@
         text-align: center;
     }
 
-    @include respond(tab-port) { 
+    @include respond(tab-land) { 
         height: 100%;
         -webkit-clip-path: none;
         clip-path: none;
     }
 
     @include respond(phone) { 
-        height: 120vh;
+        // height: 120vh;
     }
     
 }

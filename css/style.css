@@ -359,14 +359,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 75em) {
     .header {
       height: 100%;
       -webkit-clip-path: none;
       clip-path: none; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      height: 120vh; } }
 
 .header-menu__list-items {
   font-size: 2.2rem;
