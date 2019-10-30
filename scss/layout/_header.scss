@@ -21,7 +21,9 @@
     }
 
     @include respond(tab-port) { 
-        // height: 75vh;
+        height: 100%;
+        -webkit-clip-path: none;
+        clip-path: none;
     }
 
     @include respond(phone) { 
