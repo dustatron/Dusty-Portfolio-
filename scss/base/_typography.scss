@@ -18,6 +18,10 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
+
+        @include respond (tab-port) {
+            font-size: 8rem;
+        }
     
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -25,7 +29,7 @@ body {
         
         @include respond(phone) {
             letter-spacing: 1rem;
-            font-family: 5rem;
+            font-size: 5rem;
         }
         /*
         animation-delay: 3s;
@@ -40,8 +44,13 @@ body {
         letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
 
+        @include respond (tab-port) {
+            font-size: 3rem;
+        }
+
         @include respond(phone) {
             letter-spacing: .5rem;
+            font-size: 2rem;
         }
     }
 }
@@ -85,6 +94,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     transition: all .5s;
+
+    @include respond (tab-port) {
+        font-size: 3rem;
+    }
 
     &:hover {
         transform: scale(1.03) translateY(-3px);

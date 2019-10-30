@@ -48,7 +48,7 @@
             }
         }
 
-        @include respond(tab-port) { 
+        @include respond(phone) { 
             display: block;
             padding: 0rem;
         }
@@ -69,6 +69,10 @@
         &:hover {
             color: $color-white;
             transform: translateY(-0.8rem);
+
+            @include respond (tab-port) {
+                transform: translateY(0rem);
+            }
 
         }
 

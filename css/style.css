@@ -53,19 +53,26 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--main {
+        font-size: 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-family: 5rem; } }
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--sub {
+        font-size: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .5rem;
+        font-size: 2rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -99,6 +106,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   transition: all .5s; }
+  @media only screen and (max-width: 62.5em) {
+    .heading-cards {
+      font-size: 3rem; } }
   .heading-cards:hover {
     transform: scale(1.03) translateY(-3px); }
 
@@ -295,8 +305,8 @@ body {
         margin-bottom: 0; } }
   @media only screen and (max-width: 62.5em) {
     .row {
-      max-width: 90rem;
-      padding: 3rem 3rem; } }
+      max-width: 100%;
+      padding: 3rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .row {
       width: 100%;
@@ -361,7 +371,7 @@ body {
     @media only screen and (max-width: 62.5em) {
       .header-menu__list-items:not(:last-child) {
         border-right: none; } }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header-menu__list-items {
       display: block;
       padding: 0rem; } }
@@ -376,6 +386,9 @@ body {
   .header-menu__link:hover {
     color: #fff;
     transform: translateY(-0.8rem); }
+    @media only screen and (max-width: 62.5em) {
+      .header-menu__link:hover {
+        transform: translateY(0rem); } }
   .header-menu__link:active {
     transform: translateY(0.1rem);
     color: #034f1c; }
@@ -474,6 +487,9 @@ body {
   text-align: center;
   padding-bottom: 0rem;
   margin-bottom: .2rem; }
+  @media only screen and (max-width: 62.5em) {
+    .projects__title {
+      font-size: 5rem; } }
   .projects__title--sub {
     font-size: 1.6rem;
     text-align: center; }

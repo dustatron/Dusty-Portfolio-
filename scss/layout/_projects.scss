@@ -6,6 +6,10 @@
        padding-bottom: 0rem;
        margin-bottom: .2rem;
 
+       @include respond (tab-port) {
+        font-size: 5rem;
+      }
+
        &--sub {
            font-size: 1.6rem;
            text-align: center;
