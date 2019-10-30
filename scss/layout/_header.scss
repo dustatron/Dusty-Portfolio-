@@ -12,6 +12,7 @@
     clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 90%, 0 70%);
 
     &__text-box{
+        padding-top: 3rem;
         position: absolute;
         top: 40%;
         left: 50%;
@@ -19,11 +20,11 @@
         text-align: center;
     }
 
-    @include respond(tab-port) { // width < 900?
-        height: 75vh;
+    @include respond(tab-port) { 
+        // height: 75vh;
     }
 
-    @include respond(phone) { // width < 900?
+    @include respond(phone) { 
         height: 120vh;
     }
     

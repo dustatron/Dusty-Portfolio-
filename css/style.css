@@ -292,6 +292,8 @@ body {
     box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.2); }
   .feature-box:focus {
     outline: none; }
+  .feature-box__text {
+    font-size: 1.6rem; }
 
 .row {
   max-width: 130rem;
@@ -348,14 +350,12 @@ body {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 90%, 0 70%);
   clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 90%, 0 70%); }
   .header__text-box {
+    padding-top: 3rem;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  @media only screen and (max-width: 62.5em) {
-    .header {
-      height: 75vh; } }
   @media only screen and (max-width: 37.5em) {
     .header {
       height: 120vh; } }
