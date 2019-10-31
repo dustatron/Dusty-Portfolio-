@@ -362,11 +362,8 @@ body {
   @media only screen and (max-width: 62.5em) {
     .header {
       height: 100%;
-      -webkit-clip-path: 0;
-      clip-path: 0; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      height: 120vh; } }
+      -webkit-clip-path: none;
+      clip-path: none; } }
 
 .header-menu__list-items {
   font-size: 2.2rem;
@@ -483,11 +480,9 @@ body {
   .footer__list {
     list-style: none; }
     .footer__list--item {
-      text-align: left;
+      text-align: center;
       padding-top: 2rem;
       margin-top: 1rem; }
-      .footer__list--item:not(last-child) {
-        border-bottom: 1px solid #777; }
 
 .projects__title {
   color: #777;

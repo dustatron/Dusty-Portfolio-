@@ -102,13 +102,14 @@
         list-style: none;
 
         &--item {
-            text-align: left;
+            text-align: center;
             padding-top: 2rem;
             margin-top: 1rem;
+            // border-bottom: 1px solid $color-grey;
 
-            &:not(last-child) {
-               border-bottom: 1px solid $color-grey;
-            }
+            // &:not(last-child) {
+            //    border-bottom: 1px solid $color-grey;
+            // }
 
         }
     }
